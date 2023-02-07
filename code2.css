@@ -1,0 +1,120 @@
+@Import Url('Https://Fonts.Googleapis.Com/Css2?Family=Poppins:wght@200;400;600&Display=Swap');
+
+*{
+    Box-Sizing: Border-Box;
+    
+}
+
+Body{
+    Margin: 0;
+    Background-Color: #Cd094e;
+     Font-Family: "Poppins", Sans-Serif;
+}
+
+Header{
+    Background-Color: #0615de;
+    Padding: 1rem;
+    Display: Flex;
+    Justify-Content: Flex-End;
+}
+
+.Search {
+Padding: 0.5rem 1rem;
+Border-Radius: 50px;
+Border: 2px Solid #22254b;
+Background-Color: Transparent;
+Font-Family: Inherit;
+Color: #Eee;
+Font-Size: 1rem;
+}
+
+.Search::Placeholder{
+    Color: #Afb2dc;
+}
+
+.Search:focus{
+    Outline: None;
+    Background-Color: #05082c;
+}
+
+
+Main{
+    Display: Flex;
+    Flex-Wrap: Wrap;
+}
+
+
+/* Ye Baad Me Dekhte Hai */
+
+.Movie{
+    Box-Shadow: 0 4px 5px Rgba(0,0,0,0.2);
+    Border-Radius: 3px;
+    Width: 300px;
+    Background-Color: #0d1dd2;
+    Margin: 1rem;
+    Overflow: Hidden;
+    Position: Relative;
+
+}
+
+.Movie Img{
+ Width: 100%;
+   
+}
+
+.Movie-Info{
+    Display: Flex;
+    Justify-Content: Space-Between;
+    Padding: 0.5rem 1rem 1rem;
+    Color: #Eee;
+    Letter-Spacing: 0.5px;
+    Align-Items: Center;
+}
+
+.Movie-Info H3{
+    Margin: 0;
+}
+
+.Movie-Info Span{
+    Background-Color: #22254b;
+    Padding: 0.25rem 0.5rem;
+    Border-Radius: 3px;
+    Font-Weight: Bold;
+}
+
+.Movie-Info Span.Green{
+    Color: Rgb(46, 194, 46);
+}
+.Movie-Info Span.Orange{
+ Color: Orange;
+}
+.Movie-Info Span.Red{
+    Color: Red;
+
+}
+
+.Overview{
+    Position: Absolute;
+    Top: 0;
+    Right: 0;
+    Left: 0;
+    Bottom: 0;
+    Background-Color: #Fff;
+    Padding: 2rem;
+    Transform: TranslateY(100%);
+    Transition: Transform 1s Ease-In;
+    Max-Width: 100%;
+    Overflow: Auto;
+
+
+
+}
+
+.Movie:hover .Overview{
+    Transform: TranslateY(0);
+
+}
+
+.Overview H4{
+    Margin-Top: 0;
+}
